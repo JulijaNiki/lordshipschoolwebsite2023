@@ -1,0 +1,35 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+(function(){const t=document.querySelector(".google-translate-widget-button");if(t){t.addEventListener("click",function(){document.querySelector(".goog-te-banner-frame").contentDocument.querySelector(".goog-close-link").click()})}function e(){document.body.style.minHeight="";document.body.style.position="";document.body.style.top=""}function o(t,o){for(var n=0;n<t.length;n++){const c=t[n];const r=c.addedNodes[0];if(r&&r.id==="goog-gt-tt"){e();o.disconnect()}}}function n(t){for(var o=0;o<t.length;o++){const n=t[o];if(n.attributeName==="class"&&(n.oldValue&&n.oldValue.indexOf("translated")!==-1||n.target.className.indexOf("translated")!==-1)){e()}}}new MutationObserver(o).observe(document.body,{childList:true});new MutationObserver(n).observe(document.documentElement,{attributeFilter:["class"],attributeOldValue:true,attributes:true})})();
+
+}
+/*
+     FILE ARCHIVED ON 21:50:04 Aug 12, 2024 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 11:44:59 Jun 21, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.697
+  exclusion.robots: 0.024
+  exclusion.robots.policy: 0.009
+  esindex: 0.015
+  cdx.remote: 6.64
+  LoadShardBlock: 87.222 (3)
+  PetaboxLoader3.datanode: 134.797 (5)
+  load_resource: 268.543 (2)
+  PetaboxLoader3.resolve: 165.683 (2)
+*/
