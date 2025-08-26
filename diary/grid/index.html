@@ -47,7 +47,6 @@
 <link rel="stylesheet" type="text/css" href="./Video tour of Lordship Lane primary _ Lordship Lane Primary School_files/banner-styles.css">
 <link rel="stylesheet" type="text/css" href="./Video tour of Lordship Lane primary _ Lordship Lane Primary School_files/iconochive.css">
 <link rel="stylesheet" media="screen" href="https://www.lordshiplaneprimary.co.uk/_includes/font-awesome/5.7.1/css/fa-web-font.css?cache=250616">
-<link rel="icon" type="image/x-icon" href="./Video tour of Lordship Lane primary _ Lordship Lane Primary School_files/favicon.ico">
 
 
     <!-- End Wayback Rewrite JS Include -->
@@ -84,7 +83,7 @@
 }
 
 .calendar-categories-button {
-  background: #0073e6;
+  background: #1f1f1f;
   border: none;
   color: white;
   padding: 8px 14px;
@@ -109,15 +108,42 @@
   display: contents;
 }
 
-.calendar-day {
-  border: 1px solid #ddd;
-  padding: 12px;
-  text-align: right;
-  height: 80px;
-  font-size: 14px;
-  background: #fff;
+
+
+/* Weekday headers (top row) */
+/* Weekday headers (top row) */
+/* Weekday headers (top row) */
+/* Weekday headers (top row) */
+.grid-calendar .calendar-day:nth-child(-n+7) {
+    height: 40px; /* shorter header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px; /* weekday font size */
+    font-weight: bold;
+    border: 1px solid rgb(189, 189, 189); /* gray border */
+    white-space: nowrap; /* prevent wrapping */
+    overflow: visible; /* prevent ellipsis */
+    text-overflow: clip; /* don't show ... */
 }
 
+/* Day cells (dates) */
+.grid-calendar .calendar-day {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* align numbers at top */
+    text-align: center;
+    font-size: 16px; /* day number size */
+    height: 120px; /* day cell height */
+    border: 1px solid rgb(189, 189, 189); /* gray border */
+    padding-top: 5px; /* small top padding */
+    white-space: nowrap; /* prevent wrapping */
+    overflow: visible; /* prevent ellipsis */
+    text-overflow: clip; /* don't show ... */
+}
+
+
+/* Center all days' numbers */
 .calendar-day.weekend {
   background: #fff8e1; /* soft yellow */
 }
@@ -220,41 +246,14 @@
 .picker-actions a:hover {
   background: #ddd;
 }
+.date-today {
+    background: hsl(211, 100%, 94%);
+    color: hsl(211, 100%, 40%);
+}
+
 </style>
 
-<script>
-const monthYearBtn = document.getElementById("month-year");
-const monthPicker = document.getElementById("month-picker");
-const cancelBtn = document.getElementById("cancel");
-const okBtn = document.getElementById("ok");
 
-monthYearBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  monthPicker.classList.toggle("hidden");
-});
-
-cancelBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  monthPicker.classList.add("hidden");
-});
-
-okBtn.addEventListener("click", (e) => {
-  e.preventDefault();
-  const selected = document.querySelector(".picker-months .selected").innerText;
-  const year = document.getElementById("picker-year").innerText;
-  monthYearBtn.innerText = selected + " " + year + " ▼";
-  monthPicker.classList.add("hidden");
-});
-
-// Make months selectable
-document.querySelectorAll(".picker-months a").forEach(link => {
-  link.addEventListener("click", (e) => {
-    e.preventDefault();
-    document.querySelectorAll(".picker-months a").forEach(s => s.classList.remove("selected"));
-    link.classList.add("selected");
-  });
-});
-</script>
   <link rel="stylesheet" href="./Video tour of Lordship Lane primary _ Lordship Lane Primary School_files/presenter_prologue_css.7b7812f9.css" type="text/css">  
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -811,24 +810,21 @@ __wm.bt(750,27,25,2,"web","https://www.lordshiplaneprimary.co.uk/video-tour-of-l
 
 
 
-  <div class="google-translate-widget" id="google_translate_element" data-cookie="google-translate">
-    
-        
+<div id="google_translate_element"></div>
 
-      <script>
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-            pageLanguage: 'en'
-          }, 'google_translate_element');
-        }
-      </script>
+<script type="text/javascript">
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: 'en',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      },
+      'google_translate_element'
+    );
+  }
+</script>
 
-      <script src="./Video tour of Lordship Lane primary _ Lordship Lane Primary School_files/element.js.download"></script>
-      <script src="./Video tour of Lordship Lane primary _ Lordship Lane Primary School_files/google_translate.3323e9a6.js.download"></script>
-    <div class="skiptranslate goog-te-gadget" dir="ltr" style="display: none;"><div id=":0.targetLanguage" class="goog-te-gadget-simple" style="white-space: nowrap;"><img src="./Video tour of Lordship Lane primary _ Lordship Lane Primary School_files/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://web.archive.org/web/20240521091610/https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"><span style="vertical-align: middle;"><a aria-haspopup="true" class="VIpgJd-ZVi9od-xl07Ob-lTBxed" href="https://web.archive.org/web/20240521091610/https://www.lordshiplaneprimary.co.uk/video-tour-of-lordship-lane-primary/#"><span></span><img src="./Video tour of Lordship Lane primary _ Lordship Lane Primary School_files/cleardot.gif" alt="" width="1" height="1"><span style="border-left: 1px solid rgb(187, 187, 187);">​</span><img src="./Video tour of Lordship Lane primary _ Lordship Lane Primary School_files/cleardot.gif" alt="" width="1" height="1"><span aria-hidden="true" style="color: rgb(118, 118, 118);">▼</span></a></span></div></div></div>
-
-
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
           </div> 
           </article>
 
@@ -954,21 +950,19 @@ __wm.bt(750,27,25,2,"web","https://www.lordshiplaneprimary.co.uk/video-tour-of-l
 <div class="rendered-uploaded-video">
  
           
-  
-  <div class="calendar-links">
-    <a class="calendar-links-subscribe icon-font-calendar-grid" rel="nofollow" href="/diary/subscribe/">
-      Subscribe to this calendar
-    </a>
-
-    <a class="calendar-links-toggle-view" href="/diary/list/">View as list</a>
-  </div>
+<div class="calendar-links">
+  <a class="calendar-links-subscribe icon-font-calendar-grid" rel="nofollow" href="/diary/subscribe/">
+    Subscribe to this calendar
+  </a>
+  <a class="calendar-links-toggle-view" href="/diary/list/">View as list</a>
+</div>
 
 <div class="calendar-header">
   <center>
-  <a href="#" id="prev-month">«</a>
-  <a href="#" id="month-year" class="dropdown-toggle">July 2025 ▼</a>
-  <a href="#" id="next-month">»</a>
-</center>
+    <a href="#" id="prev-month">«</a>
+    <a href="#" id="month-year" class="dropdown-toggle">July 2025 ▼</a>
+    <a href="#" id="next-month">»</a>
+  </center>
 </div>
 
 <!-- Month-Year Picker Dropdown -->
@@ -980,7 +974,7 @@ __wm.bt(750,27,25,2,"web","https://www.lordshiplaneprimary.co.uk/video-tour-of-l
   </div>
   <div class="picker-months">
     <a href="#">Jan</a><a href="#">Feb</a><a href="#">Mar</a><a href="#">Apr</a>
-    <a href="#">May</a><a href="#">Jun</a><a href="#" class="selected">Jul</a><a href="#">Aug</a>
+    <a href="#">May</a><a href="#">Jun</a><a href="#">Jul</a><a href="#">Aug</a>
     <a href="#">Sep</a><a href="#">Oct</a><a href="#">Nov</a><a href="#">Dec</a>
   </div>
   <div class="picker-actions">
@@ -989,64 +983,132 @@ __wm.bt(750,27,25,2,"web","https://www.lordshiplaneprimary.co.uk/video-tour-of-l
   </div>
 </div>
 
-  <!-- Category filter -->
-  <div class="calendar-categories">
-    <span>Filter by category:</span>
-    <button>All calendar items</button>
-    <button>Uncategorised</button>
-  </div>
+<!-- Calendar Grid -->
+<div class="grid-calendar" id="calendar-grid"></div>
 
-  <!-- Calendar grid -->
-  <div class="grid-calendar">
-    <div class="calendar-day">Mon</div>
-    <div class="calendar-day">Tue</div>
-    <div class="calendar-day">Wed</div>
-    <div class="calendar-day">Thu</div>
-    <div class="calendar-day">Fri</div>
-    <div class="calendar-day weekend">Sat</div>
-    <div class="calendar-day weekend">Sun</div>
+<script>
+const monthYearBtn = document.getElementById("month-year");
+const monthPicker = document.getElementById("month-picker");
+const cancelBtn = document.getElementById("cancel");
+const okBtn = document.getElementById("ok");
+const calendarGrid = document.getElementById("calendar-grid");
 
-    <div class="calendar-day other-month"></div>
-    <div class="calendar-day">1</div>
-    <div class="calendar-day">2</div>
-    <div class="calendar-day">3</div>
-    <div class="calendar-day">4</div>
-    <div class="calendar-day weekend">5</div>
-    <div class="calendar-day weekend">6</div>
+const monthNames = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+const dayNames = ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
 
-    <div class="calendar-day">7</div>
-    <div class="calendar-day">8</div>
-    <div class="calendar-day">9</div>
-    <div class="calendar-day">10</div>
-    <div class="calendar-day">11</div>
-    <div class="calendar-day weekend">12</div>
-    <div class="calendar-day weekend">13</div>
+let today = new Date();
+let currentMonth = today.getMonth();
+let currentYear = today.getFullYear();
+let selectedMonth = currentMonth;
+let selectedYear = currentYear;
 
-    <div class="calendar-day">14</div>
-    <div class="calendar-day">15</div>
-    <div class="calendar-day">16</div>
-    <div class="calendar-day">17</div>
-    <div class="calendar-day">18</div>
-    <div class="calendar-day weekend">19</div>
-    <div class="calendar-day weekend">20</div>
+// Show/hide month picker
+monthYearBtn.addEventListener("click", e => {
+  e.preventDefault();
+  monthPicker.classList.toggle("hidden");
+});
 
-    <div class="calendar-day">21</div>
-    <div class="calendar-day">22</div>
-    <div class="calendar-day">23</div>
-    <div class="calendar-day">24</div>
-    <div class="calendar-day">25</div>
-    <div class="calendar-day weekend">26</div>
-    <div class="calendar-day weekend">27</div>
+// Cancel button
+cancelBtn.addEventListener("click", e => {
+  e.preventDefault();
+  monthPicker.classList.add("hidden");
+});
 
-    <div class="calendar-day">28</div>
-    <div class="calendar-day">29</div>
-    <div class="calendar-day">30</div>
-    <div class="calendar-day">31</div>
-    <div class="calendar-day other-month"></div>
-    <div class="calendar-day other-month"></div>
-    <div class="calendar-day other-month"></div>
-  </div>
+// OK button
+okBtn.addEventListener("click", e => {
+  e.preventDefault();
+  const selectedLink = document.querySelector(".picker-months a.selected");
+  if(selectedLink) selectedMonth = parseInt(selectedLink.dataset.month);
+  selectedYear = parseInt(document.getElementById("picker-year").innerText);
+  currentMonth = selectedMonth;
+  currentYear = selectedYear;
+  updateCalendar();
+  monthPicker.classList.add("hidden");
+});
 
+// Month selection
+document.querySelectorAll(".picker-months a").forEach((link,index) => {
+  link.dataset.month = index;
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    document.querySelectorAll(".picker-months a").forEach(s => s.classList.remove("selected"));
+    link.classList.add("selected");
+  });
+});
+
+// Year navigation
+document.getElementById("prev-year").addEventListener("click", e => {
+  e.preventDefault();
+  document.getElementById("picker-year").innerText = parseInt(document.getElementById("picker-year").innerText)-1;
+});
+document.getElementById("next-year").addEventListener("click", e => {
+  e.preventDefault();
+  document.getElementById("picker-year").innerText = parseInt(document.getElementById("picker-year").innerText)+1;
+});
+
+// Month arrow navigation
+document.getElementById("prev-month").addEventListener("click", () => {
+  currentMonth--;
+  if(currentMonth < 0) { currentMonth = 11; currentYear--; }
+  updateCalendar();
+});
+document.getElementById("next-month").addEventListener("click", () => {
+  currentMonth++;
+  if(currentMonth > 11) { currentMonth = 0; currentYear++; }
+  updateCalendar();
+});
+
+// Render calendar
+function updateCalendar() {
+  monthYearBtn.innerText = monthNames[currentMonth]+" "+currentYear+" ▼";
+  renderCalendar(currentMonth, currentYear);
+}
+
+function renderCalendar(month, year) {
+  calendarGrid.innerHTML = "";
+
+  // Render weekdays
+// Render weekdays
+dayNames.forEach(d => {
+  const div = document.createElement("div");
+  div.classList.add("calendar-day");
+  if(d=="Saturday" || d=="Sunday") div.classList.add("weekend");
+  div.innerText = d;
+  calendarGrid.appendChild(div);
+});
+  const firstDay = new Date(year, month, 1).getDay(); // 0=Sun
+  const daysInMonth = new Date(year, month+1, 0).getDate();
+
+  // Calculate blanks (Mon=0, Sun=6)
+  let startBlank = firstDay == 0 ? 6 : firstDay - 1;
+
+  for(let i=0;i<startBlank;i++){
+    const div = document.createElement("div");
+    div.classList.add("calendar-day","other-month");
+    calendarGrid.appendChild(div);
+  }
+
+  for(let d=1; d<=daysInMonth; d++){
+    const div = document.createElement("div");
+    div.classList.add("calendar-day");
+    const dayOfWeek = new Date(year, month, d).getDay();
+    if(dayOfWeek==0 || dayOfWeek==6) div.classList.add("weekend");
+    if(d==today.getDate() && month==today.getMonth() && year==today.getFullYear()) div.classList.add("date-today");
+    div.innerText = d;
+    calendarGrid.appendChild(div);
+  }
+
+  // Fill remaining boxes to complete the last week
+  while(calendarGrid.children.length % 7 != 0){
+    const div = document.createElement("div");
+    div.classList.add("calendar-day","other-month");
+    calendarGrid.appendChild(div);
+  }
+}
+
+// Initial render
+updateCalendar();
+</script>
 
 
         </main>
