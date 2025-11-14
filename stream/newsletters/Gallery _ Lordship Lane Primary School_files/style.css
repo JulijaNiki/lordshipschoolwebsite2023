@@ -1,0 +1,698 @@
+html {
+  font-size: 62.5%;
+  background-color: #343434;
+}
+
+body {
+  background: #fff;
+  overflow-y: scroll;
+}
+
+.container {
+  position: relative;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 220px;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 600;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.main-header {
+  position: relative;
+  padding: 10px 0 0 38px;
+}
+
+.banner-wrap::before, 
+.banner-wrap::after {
+  display:none;
+}
+
+/* School Name
+==============*/
+
+.school-details {
+  font-size: 6rem;
+  margin: -9px 0 0 10px;
+}
+
+.motto{
+  font-size: 3.6rem;
+  margin-top: 8px;
+}
+
+.content-container {
+  position: relative;
+  width: 800px;
+  min-height: 100px;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+.login-link a {
+  position: absolute;
+  top: 4px;
+  right: 10px;
+  z-index: 101;
+  padding: 3px 5px;
+  border-radius: 2px;
+  line-height: 1.8;
+  text-align: right;
+  background-color: #e86105;
+}
+
+.login-responsive {
+  display: none;
+}
+
+.page-title {
+  margin-bottom: 10px;
+}
+
+footer {
+  height: 26px;
+  background: #343434;
+  border-top: 1px solid #212e88;
+}
+
+.img-wrap {
+  position: relative;
+  min-height: 480px;
+  height: 52vh;
+}
+
+.full-width-slide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.full-width-slide::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: block;
+  top: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Slide Descriptions
+=====================*/
+
+.g-descriptions {
+  position: absolute;
+  right: 28px;
+  top: 220px;
+  font-family: 'Roboto Slab', 'Hoefler Text', Constantia, Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  color: #fff;
+  text-align: right;
+  z-index: 10;
+}
+
+.g-descriptions .gallery-title {
+  display: none;
+  font-size: 7.5rem;
+  color: #fff;
+  line-height: 1.2;
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.45);
+}
+
+.g-descriptions .gallery-title.show {
+  display: block;
+}
+
+.fs{
+  font-size:2.8rem!important}
+}
+
+h3.gallery-title.[class*="g-title-"].fs {
+  position: relative;
+  font-size: 2.8rem;
+  line-height: 1.3;
+  margin-top: 10px;
+  text-shadow: 1px 0px 2px rgba(0, 0, 0, 0.45);
+}
+
+.g-descriptions h2::after {
+  position: absolute;
+  top: 78px;
+  right: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #fff;
+}
+
+.g-descriptions h3 span {
+  display: block;
+}
+
+
+/* Navigation
+============= */
+
+.main-nav {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 101;
+  height: auto;
+  outline: none;
+}
+
+.main-nav h2 {
+  display: none;
+}
+
+.main-nav ul {
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
+.main-nav ul li {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  height: 37px;
+  margin: 0 20px;
+}
+
+.main-nav ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #2f517b;
+  font-size: 1.8rem;
+  font-weight: 700;
+  font-family: 'Roboto Slab', 'Hoefler Text', Constantia, Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+}
+
+
+/* Change the background position to show the correct image for each navigation
+   button within the sprite */
+
+.main-nav .home-btn {
+  background-position: 0 0;
+  z-index: 200;
+}
+
+.main-nav .ps_topic_slug_our-school {
+  background-position: 0 -52px;
+  z-index: 199;
+}
+
+.main-nav ul li::before,
+.main-nav ul li::after {
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #2f517b;
+  transition: ease 0.2s width;
+}
+
+.main-nav ul li::after {
+  top: 28px;
+}
+
+.main-nav ul li:focus::before,
+.main-nav ul li:focus::after,
+.main-nav ul li:hover::before,
+.main-nav ul li:hover::after {
+  width: 100%;
+}
+
+.main-nav ul li::before {
+  top: 0;
+}
+
+
+/* Pop Ups */
+
+
+/* Styles for ALL pop-up menus added here, styles for individual menus added below */
+
+.main-nav ul li ul {
+  display: none;
+  position: absolute;
+  top: calc(100% + 10px);
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  z-index: 102;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.main-nav ul li ul::before {
+  position: absolute;
+  top: -10px;
+  right: 50%;
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  content: '';
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #fff;
+}
+
+.main-nav ul li ul::after {
+  position: absolute;
+  top: -10px;
+  left: 0;
+  content: '';
+  display: block;
+  height: 10px;
+  width: 100%;
+  /* background:Red; */
+}
+
+.main-nav ul li ul,
+.main-nav ul li ul li {
+  width: 226px;
+}
+
+.main-nav ul li.ps_nav-top-level:focus ul,
+.main-nav ul li.ps_nav-top-level:hover ul {
+  display: block;
+}
+
+.main-nav ul li.ps_nav-top-level:focus ul ul,
+.main-nav ul li.ps_nav-top-level:hover ul ul {
+  display: none;
+}
+
+.main-nav li ul li {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  text-indent: 0;
+  background: none;
+}
+
+.main-nav ul li:nth-child(6) ul {
+  right: 0;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.main-nav ul li:nth-child(6) ul::before {
+  right: 53px;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.main-nav li ul li:focus,
+.main-nav li ul li:hover {
+  background-color: #2f517b;
+}
+
+.main-nav ul li ul li::after,
+.main-nav ul li ul li::before {
+  display: none;
+}
+
+.main-nav li ul li a {
+  display: block;
+  width: auto;
+  padding: 4px 7px;
+  margin: 0;
+  font-weight: 400;
+  text-decoration: none;
+  text-shadow: none;
+  color: #2f517b;
+  font-size: 1.6rem;
+  font-family: 'Roboto', 'Segoe UI', Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+
+/* To style the hover effects for the links in the popup menus
+   Styles for ALL menus added here, styles for individual menus added below */
+
+.main-nav li ul li a:hover {
+  color: #fff;
+}
+
+.main-nav ul li ul li:not(:last-child) {
+  border-bottom: 1px solid #dbdbdc;
+}
+
+
+/* Footer Links
+=============== */
+
+.footer-links {
+  position: relative;
+  margin: 0 auto;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin: 0 7px;
+  line-height: 26px;
+}
+
+.footer-links .psa-foot {
+  line-height: 25px;
+  font-size: 1.2rem;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-links .desktop-only {
+  text-transform: capitalize;
+}
+
+.footer-links .l-link::after {
+  content: '\0049';
+  color: #a98a10;
+  font-size: 1.4rem;
+}
+
+
+/* Latest News */
+
+.news-items {
+  width: 650px;
+}
+
+
+/* Scroll to top button
+======================= */
+
+.scroll-top {
+  border: 1px solid #dfdfdf;
+  color: #fff;
+  background-color: #2f517b;
+  bottom: 27px;
+  margin-right: 0;
+  border-radius: 0;
+}
+
+.scroll-top:hover {
+  background: #0e3464;
+}
+
+
+/* TOP LINKS
+============*/
+
+.top-links {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  height: 75px;
+  width: 180px;
+  font-size: 0;
+}
+
+.top-links .cp-content-wrap {
+  display: inline-block;
+  width: 90px;
+  height: 100%;
+}
+
+.top-links .cp-content-wrap .cp-content-trigger {
+  display: block;
+  position: relative;
+  height: 100%;
+}
+
+.top-links .cp-trigger-active::after {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  content: '';
+  display: block;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 100%;
+  z-index: 40;
+}
+
+.top-links .cp-content-wrap .cp-icon-wrap span {
+  display: block;
+}
+
+.top-links .cp-icon-wrap {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 13px;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  overflow: hidden;
+  height: 100%;
+}
+
+.top-links .cp-icon-wrap .cp-icon-name,
+.top-links .cp-icon-wrap .cp-font-icon {
+  position: relative;
+  z-index: 4;
+}
+
+.top-links .cp-content-wrap:nth-of-type(1) .cp-content-trigger {
+  background: #1e426f;
+}
+
+.top-links .cp-content-wrap:nth-of-type(2) .cp-content-trigger {
+  background: #0e3464;
+}
+
+.top-links .cp-content-wrap .cp-content-trigger .cp-icon-wrap::before {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  bottom: 0;
+  left: 0;
+  content: '';
+  border-right: 50px solid transparent;
+  border-bottom: 75px solid #0a2548;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  transition: ease 0.2s transform;
+}
+
+.top-links .cp-content-wrap .cp-content-trigger:focus .cp-icon-wrap::before,
+.top-links .cp-content-wrap .cp-content-trigger:hover .cp-icon-wrap::before {
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+
+.top-links .cp-font-icon {
+  font-size: 2.7rem;
+}
+
+.top-links .cp-icon-name {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 7px;
+  transition: ease 0.2s color;
+}
+
+.top-links .cp-content-wrap .cp-content-trigger:focus .cp-icon-name,
+.top-links .cp-content-wrap .cp-content-trigger:hover .cp-icon-name {
+  color: #fbe194;
+}
+
+.top-links .cp-content-block {
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  background: #040e4f;
+}
+
+.top-links .cp-content-wrap:nth-of-type(1) .cp-content-block {
+  width: 286px;
+}
+
+.top-links .cp-content-wrap:nth-of-type(2) .cp-content-block {
+  width: 259px;
+}
+
+/* Google Translate */
+#google_translate_element {
+  position: absolute;
+  width: 260px;
+  height: 34px;
+  border-radius: 15px;
+  top: 20px;
+  left: 9px;
+}
+
+.goog-te-gadget-simple {
+  width: 240px;
+  height: 29px;
+  border: 1px solid #fff!important;
+  border-radius: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.goog-te-gadget-simple span {
+  display: inline-block;
+  line-height: 34px;
+  margin-top: -1px;
+}
+
+.goog-te-menu-value span:first-child {
+  width: 180px;
+  background: #fff;
+  border-radius: 0 10px 10px 0;
+  position: relative;
+}
+
+.goog-te-menu-value span + img + span {
+  color: #fff!important;
+  border-left-color: #49161d!important;
+  width: 18px;
+  margin-left: -21px!important;
+  border-radius: 10px;
+}
+
+.goog-te-menu-value > span + img + span {
+  height: 22px;
+  line-height: 34px;
+  margin-top: -1px;
+  font-size: 1.4rem;
+  background: #2F517B;
+  padding: 1px 10px 11px 6px;
+  margin-left: -5px;
+}
+
+.goog-te-banner-frame {
+  position: absolute!important;
+  top: -40px!important;
+}
+
+.google-search-widget {left: 14px;top: 21px;}
+
+@media(max-width: 1330px) {
+  
+  .school-name {
+    font-size: 5rem;
+  }
+  
+  .motto {
+    font-size: 3rem;
+  }
+  
+}
+
+@media(max-width:1190px) {
+
+  .main-header {
+    
+padding: 10px 0 0 18px;
+  }
+
+  .home-link {
+    
+width: 169px;
+  }
+
+}
+
+@media(max-width:1110px) {
+  
+  .school-name {
+
+font-size: 4rem;
+}
+
+.motto {
+    margin-top: -10px;
+    font-size: 2.4rem;
+}
+  
+}
+
+@media(max-width:1080px) {
+  
+  .school-name {
+    /* margin: -9px 0 0 0px; */
+  }
+  
+  .school-name {
+    /* font-size: 4.5rem; */
+  }
+  
+  .footer-links li {
+    margin: 0 2px;
+  }
+  
+}
+
+@media(max-width:1040px) {
+  
+  .main-header {
+    /* padding: 10px 0 0 10px; */
+  }
+  
+}
+
+@media (max-height:900px) {
+  
+  .g-descriptions .gallery-title {
+    font-size: 5rem;
+  }
+  
+  .g-descriptions h3 {
+    font-size: 1.8rem;
+  }
+
+.g-descriptions h2::after {
+  top: 59px;
+}
+  
+}
+
+/*
+     FILE ARCHIVED ON 00:48:10 Sep 15, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:21:19 Aug 26, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.564
+  exclusion.robots: 0.025
+  exclusion.robots.policy: 0.013
+  esindex: 0.013
+  cdx.remote: 47.211
+  LoadShardBlock: 251.67 (3)
+  PetaboxLoader3.datanode: 640.407 (5)
+  load_resource: 838.478
+  PetaboxLoader3.resolve: 343.047
+  loaddict: 219.393
+*/

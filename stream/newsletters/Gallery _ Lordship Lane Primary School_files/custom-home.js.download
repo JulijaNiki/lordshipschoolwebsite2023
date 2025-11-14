@@ -1,0 +1,81 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+// Get Average
+function getAve() {
+  var total = 0;
+  var count = 0;
+  var ave = 0;
+  $('.attendance-ave .cp-calc').each(function() {
+    var myVal = $(this).text();
+    var numOnly = parseFloat(myVal.replace(/%/, ''));
+    if (numOnly >= 0 && numOnly <= 100) {
+      total += numOnly;
+      count++;
+    } else if ($.trim($(this).html()) == '' || !jQuery.isNumeric(numOnly)) {
+      total += 0;
+      count++;
+    }
+    console.log(numOnly);
+  });
+  ave = (total / count).toFixed(2);
+  $("#cp-ave").html(ave + "%");
+}getAve();
+
+// Get Average
+function getAvePunc() {
+  var total = 0;
+  var count = 0;
+  var ave = 0;
+  var error = false;
+  $('.punctuation-ave .cp-calc').each(function() {
+    var myVal = $(this).text();
+    var numOnly = parseFloat(myVal.replace(/%/, ''));
+    if (numOnly >= 0 && numOnly <= 100) {
+      total += numOnly;
+      count++;
+    } else if ($.trim($(this).html()) == '') {
+      total += 0;
+      count++;
+    } else {
+      error = true;
+    }
+  });
+  ave = (total / count).toFixed(2);
+  if (error) {
+    $(".cp-ave-punct").html('').append("<span class='cp-error'>Invalid Value.</span>");
+  } else {
+    $("#cp-ave-punct").html(ave + "%");
+  }
+}getAvePunc();
+
+}
+/*
+     FILE ARCHIVED ON 14:52:14 Jun 02, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:21:21 Aug 26, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.802
+  exclusion.robots: 0.033
+  exclusion.robots.policy: 0.016
+  esindex: 0.015
+  cdx.remote: 52.088
+  LoadShardBlock: 312.878 (3)
+  PetaboxLoader3.datanode: 421.554 (4)
+  load_resource: 482.016
+  PetaboxLoader3.resolve: 341.505
+*/

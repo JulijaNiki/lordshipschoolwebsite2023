@@ -1,0 +1,21 @@
+.cookie-jar{display:none;position:fixed;bottom:0;left:0;z-index:101}.cookie-corner{position:absolute;top:-5rem;right:-5rem;width:10rem;height:10rem;z-index:1;background:#ffb100;cursor:pointer;transform:rotate(45deg)}.cookie-icon{position:absolute;top:.5rem;left:3.5rem;width:3rem;height:3rem;transform:rotate(-45deg)}.cookie-icon-star{fill:#fff}.cookie-icon-letter{fill:#717171}.cookie-icon-text{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(1px,1px,1px,1px)}.cookie-notice{display:none;position:absolute;bottom:4.5rem;left:4.5rem;width:24rem;border:.1rem solid #d2d2d2;border-top:none;border-radius:.5rem;box-shadow:0 .1rem .6rem rgba(0,0,0,0.075),0 0 4px rgba(0,0,0,0.15);background:#fff}@media(max-width:25em){.cookie-notice{bottom:6.5rem;left:5vw;width:90vw}}.cookie-jar.is-visible,.cookie-notice.is-visible{display:block}.cookie-notice-header{display:block;width:100%;padding:.5rem 0;border:.1rem solid #e49e00;border-radius:.3rem .3rem 0 0;margin-left:-0.1rem;font-size:1.7rem;font-weight:bold;text-align:center;color:#fff;background:#ffb100}.cookie-notice-message{padding:1rem;font-size:1.3rem;color:#717171}.cookie-notice-message-link{color:#0c71d9}.cookie-notice-message-link:hover,.cookie-notice-message-link:focus{color:#000}.cookie-notice-button{display:block;position:relative;padding:.5rem 1.6rem;border:.1rem solid #80bf01;border-radius:.3rem;margin:1.2rem auto .9rem;font-family:inherit;font-size:1.3rem;text-align:center;color:#fff;background:#92dc00}.cookie-notice-button:focus,.cookie-notice-button:hover{background:#89ce00}
+/*
+     FILE ARCHIVED ON 19:08:24 Sep 19, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:21:45 Aug 26, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.638
+  exclusion.robots: 0.022
+  exclusion.robots.policy: 0.01
+  esindex: 0.014
+  cdx.remote: 43.867
+  LoadShardBlock: 604.927 (3)
+  PetaboxLoader3.datanode: 769.51 (5)
+  load_resource: 782.059 (2)
+  PetaboxLoader3.resolve: 578.19 (2)
+*/

@@ -1,0 +1,309 @@
+html {
+  font-size: 70%;
+  background: #343434;
+}
+
+body {
+  background: #fff;
+}
+
+h2,
+.xlarge {
+  font-size: 1.9rem;
+  line-height: 1.3;
+}
+
+h3,
+.large {
+  font-size: 1.8rem;
+  line-height: 1.2;
+}
+
+h4,
+.medium {
+  line-height: 1.3;
+}
+
+.desktop-only {
+  display: none!important;
+}
+
+.container {
+  position: relative;
+}
+
+.content-container {
+  padding: 30px 15px 30px;
+  background: #fff;
+}
+
+.main-header {
+  padding: 30px 0;
+  background: #fff;
+  text-align: center;
+  border-bottom: 3px solid #2f517b;
+}
+
+.full-width-slide {
+  width: 100px;
+  height: 100px;
+  display: none;
+}
+
+
+/* Home link within the header should be across whole of header */
+
+.home-link {
+  width: 120px;
+  height: 120px;
+  background-size: 100%;
+}
+
+.school-name {
+  font-size: 3rem;
+  margin-left: 0;
+  text-align: left;
+}
+
+.motto {
+  font-size: 2.6rem;
+  margin-top: 10px
+}
+
+.breadcrumbs {
+  padding: 10px 0;
+}
+
+.page-title {
+  width: 100%;
+  padding: 2px 15px;
+  margin-left: -15px;
+  font-size: 3rem;
+}
+
+footer {
+  padding: 20px 0;
+  background: #343434;
+}
+
+.footer-links li:nth-child(1),
+.footer-links li:nth-child(2),
+.footer-links li:nth-child(3) {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
+/* Scrolling Banner */
+
+.scrolling-banner {
+  position: relative;
+  line-height: 40px;
+}
+
+
+/* Slide Descriptions
+=====================*/
+
+.g-descriptions {
+  color: #fff;
+  background: #0f2194;
+  text-align: center;
+  display: none;
+}
+
+.g-descriptions h3.gallery-title {
+  box-sizing: border-box;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+
+.g-descriptions .gallery-title {
+  display: none;
+  line-height: 1.4;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #fff;
+  background: #0a1561;
+  padding: 10px 5px;
+}
+
+.g-descriptions h2.gallery-title {
+  padding-bottom: 0;
+}
+
+.g-descriptions .gallery-title.show {
+  display: block;
+}
+
+.top-links .cp-content-block {
+  display: block!important;
+}
+
+/* Responsive Navigation
+======================== */
+
+.responsive-bar {
+  background: #fff;
+}
+
+.main-nav {
+  background: #f5f5f5;
+}
+
+.main-nav h2 {
+  border-color: #c8c8c8;
+}
+
+.responsive-bar,
+.main-nav,
+.main-nav h2 {
+  color: #2F517B;
+}
+
+.navigation-bar-title {
+  font-family: 'Roboto Slab', 'Hoefler Text', Constantia, Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+
+.website-navbar-toggle::before {
+  background: #2f517b;
+  color: #fff;
+}
+
+.main-nav a {
+  color: #2F517B;
+}
+
+.main-nav a:focus,
+.main-nav a:hover {
+  color: #fff;
+  background: #2F517B;
+}
+
+
+/* Back Arrow and Closing Navigation */
+
+.main-nav .close-mobile-nav,
+.main-nav .ps_activate-main-nav {
+  color: #2F517B;
+}
+
+.main-nav .close-mobile-nav:focus,
+.main-nav .close-mobile-nav:hover,
+.main-nav .ps_activate-main-nav:focus,
+.main-nav .ps_activate-main-nav:hover {
+  color: #000;
+}
+
+.google-search-widget {
+  padding: 0.4rem;
+  top: 0px;
+  width: 300px;
+  max-width: 100%;
+  box-sizing: border-box;
+  transform: translateY(-100%);
+  transition: transform 0.2s;
+  z-index: 1;
+  height:auto;
+  border:none;
+  border-radius: 0;
+  background: #264163;
+  right: 0;
+}
+
+
+/* Footer Links
+=============== */
+
+.footer-links {
+  width: 100%;
+  text-align: center;
+}
+
+.footer-links ul {
+  float: none;
+  text-align: center;
+}
+
+.footer-left,
+.footer-links .text-right li {
+  margin-bottom: 5px;
+}
+
+.footer-links li {
+  margin: 0;
+}
+
+.footer-links .text-right li {
+  display: block;
+}
+
+
+/* Additional Media Queries (Images etc.)
+========================================= */
+
+@media (max-width: 640px) {
+  
+
+  .school-name {
+    text-align: center;
+    margin-left: 0;
+    font-size: 3.2rem;
+    line-height: 1.2;
+  }
+  
+  .school-name span:nth-of-type(2) {
+    font-size: 2.5rem;
+  }
+  
+  .school-name span {
+    display: block;
+  }
+  
+  .home-link {
+    display: block;
+    margin: 0 auto 5px;
+  }
+  
+  .page-title {
+    font-size: 2.6rem;
+  }
+  
+  .footer-links li:not(.desktop-only) {
+    display: block;
+  }
+  
+  .banner-wrap::before,
+  .banner-wrap::after {
+    display: none;
+  }
+  
+  .banner-wrap {
+    padding: 0;
+  }
+  
+}
+
+/*
+     FILE ARCHIVED ON 00:48:22 Sep 15, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:21:23 Aug 26, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.587
+  exclusion.robots: 0.018
+  exclusion.robots.policy: 0.009
+  esindex: 0.009
+  cdx.remote: 100.977
+  LoadShardBlock: 405.899 (3)
+  PetaboxLoader3.datanode: 503.903 (5)
+  load_resource: 145.923
+  loaddict: 57.589
+*/

@@ -1,0 +1,121 @@
+var _____WB$wombat$assign$function_____ = function(name) {return (self._wb_wombat && self._wb_wombat.local_init && self._wb_wombat.local_init(name)) || self[name]; };
+if (!self.__WB_pmw) { self.__WB_pmw = function(obj) { this.__WB_source = obj; return this; } }
+{
+  let window = _____WB$wombat$assign$function_____("window");
+  let self = _____WB$wombat$assign$function_____("self");
+  let document = _____WB$wombat$assign$function_____("document");
+  let location = _____WB$wombat$assign$function_____("location");
+  let top = _____WB$wombat$assign$function_____("top");
+  let parent = _____WB$wombat$assign$function_____("parent");
+  let frames = _____WB$wombat$assign$function_____("frames");
+  let opener = _____WB$wombat$assign$function_____("opener");
+
+$(document).ready(function() {
+  
+  Galleria.ready(function() {
+    // Galleria quotes
+    var slidetitle = $(".gallery-title");
+
+    $(".galleria-current").bind("DOMSubtreeModified", function() {
+      var slidenum = $(".galleria-current")[0].textContent;
+      changeslidetitle(slidenum);
+    });
+
+    function changeslidetitle(slidenum) {
+      var currentTitle = $(".g-title-" + slidenum);
+      slidetitle.removeClass("show");
+      currentTitle.addClass("show");
+    }
+	});
+  
+  function revealing_content() {
+    var a = ".cp-content-trigger"; // One class for content trigger
+    var b = "cp-trigger-active"; // active state for buttons (without ".")
+    var c = "cp-content-active"; // active state fro Content blocks (without ".")
+    var d = "fade-toggle"; // initial revealing function
+    var e = ".cp-content-block"; // class for content block
+    var f = "data-content"; // content block has to hold attr (it's value should be the same as it's triggers) 
+    var g = 200; // speed for animations if jquery option used.
+    function h() {
+      if ("none" == $(".main-nav h2").css("display")) { // If Desktop version
+        $(a).removeClass(b);
+        $(e).removeClass(c).removeAttr("style");
+       //d = "css-control";   // CSS controlled blocks on desktop
+        d = "fade-toggle"; // Fade Toggle controlled blocks on desktop
+        // d = "slide-toggle";  // Slide Toggle controlled blocks on desktop
+      } else if ("block" == $(".main-nav h2").css("display")) { // If Responsive version
+        $(a).removeClass(b);
+        $(e).removeClass(c).removeAttr("style");
+        //d = "css-control";     // CSS controlled blocks on responsive
+        // d = "fade-toggle";     // Fade Toggle controlled blocks on responsive
+        d = "slide-toggle"; // Slide Toggle controlled blocks on responsive
+      }
+    }
+    h();
+    var i;
+    var w = $(window).width();
+    $(window).resize(function() {
+      if ($(window).width() == w) return;
+      w = $(window).width();
+      clearTimeout(i);
+      i = setTimeout(function() {
+        h();
+      }, 250);
+    });
+
+    $(a).click(function() {
+      var h = $(this).attr("data-button");
+      var i = e + "[" + f + "='" + h + "']";
+      if ("fade-toggle" === d) {
+        $(e).not(i).fadeOut(g);
+        $(i).delay(g).fadeToggle(g);
+      } else if ("slide-toggle" === d) {
+        $(e).not(i).slideUp(g);
+        $(i).slideToggle(g);
+      } else if ("css-control" === d)
+        if ($(i).hasClass(c)) $(i).removeClass(c);
+        else {
+          $(e).removeClass(c);
+          $(i).addClass(c);
+        }
+      else alert("Please choose 'revealing-option'!. (fade-toggle, slide-toggle or css-control)");
+      if ($(this).hasClass(b)) $(this).removeClass(b);
+      else {
+        $(a).removeClass(b);
+        $(this).addClass(b);
+      }
+      $(document).mouseup(function(f) {
+        var h = $(a + "," + e);
+        if (!h.is(f.target) && 0 === h.has(f.target).length) {
+          $(a).removeClass(b);
+          if ("fade-toggle" === d) $(e).fadeOut(g);
+          else if ("slide-toggle" === d) $(e).slideUp(g);
+          else if ("css-control" === d) $(e).removeClass(c);
+        }
+      });
+    });
+  }revealing_content();
+
+});
+
+}
+/*
+     FILE ARCHIVED ON 14:52:01 Jun 02, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:21:22 Aug 26, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.818
+  exclusion.robots: 0.032
+  exclusion.robots.policy: 0.016
+  esindex: 0.016
+  cdx.remote: 20.777
+  LoadShardBlock: 803.608 (3)
+  PetaboxLoader3.datanode: 677.531 (4)
+  load_resource: 673.556
+  PetaboxLoader3.resolve: 550.182
+*/

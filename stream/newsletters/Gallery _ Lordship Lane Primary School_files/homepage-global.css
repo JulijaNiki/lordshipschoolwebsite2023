@@ -1,0 +1,406 @@
+.breadcrumbs {
+  display: none;
+}
+
+
+/* Hide the home link - Not required on the homepage */
+
+.home-link {
+  pointer-events: none;
+}
+
+.page-title {
+  display: none;
+  background: none;
+}
+
+
+/* CP quicklinks 
+================*/
+
+.cp-quicklinks {
+  text-align: center;
+  font-size: 0;
+}
+
+.cp-quicklinks li,
+.cp-quicklinks li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cp-quicklinks li span:nth-of-type(2) {
+  color: #2f517b;
+  font-size: 2.4rem;
+  font-weight: 700;
+  transition: ease 0.2s color;
+  margin-left: 10px;
+}
+
+.cp-quicklinks li .cp-font-icon {
+  position: relative;
+  font-size: 2.3rem;
+  transition: ease 0.2s transform;
+}
+
+.cp-quicklinks li:nth-child(1) span:nth-of-type(1) {
+  color: #00ad18;
+}
+
+.cp-quicklinks li:nth-child(2) span:nth-of-type(1) {
+  color: #c22326;
+}
+
+.cp-quicklinks li:nth-child(3) span:nth-of-type(1) {
+  color: #009dde;
+}
+
+.cp-quicklinks li:nth-child(4) span:nth-of-type(1) {
+  color: #ff9c00;
+}
+
+.cp-quicklinks li:nth-child(5) span:nth-of-type(1) {
+  color: #0e3464;
+}
+
+.cp-quicklinks li:focus .cp-font-icon,
+.cp-quicklinks li:hover .cp-font-icon {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+
+.cp-quicklinks li:focus span:last-child,
+.cp-quicklinks li:hover span:last-child {
+  color: #4677b5;
+}
+
+
+/* Hit Counter
+==============*/
+
+.hit-counter {
+  background: #f7f7f7;
+  font-size: 1.4rem;
+  color: #2f517b;
+  padding: 0 8px;
+}
+
+.hit-counter-digit {
+  color: #2f517b;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.hit-counter-digit:not(:first-child) {
+  margin-left: -2px;
+}
+
+
+/* Home Text
+=============*/
+
+.home-text .home-wrap {
+  border: 4px solid #2f517b;
+  padding: 20px 0 14px 0;
+}
+
+.home-text h2 {
+  font-family: 'Roboto Slab', 'Hoefler Text', Constantia, Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  font-size: 2rem;
+  color: #2f517b;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+
+.home-text p {
+  font-size: 1.8rem;
+  line-height: 1.7rem;
+  font-style: italic;
+  color: #2f517b;
+}
+
+.home-text a {
+  position: relative;
+  display: inline-block;
+  width: 340px;
+  height: 49px;
+  background: #2f517b;
+  transition: ease 0.2s background;
+  border-radius: 10px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  line-height: 49px;
+  color: #fff!important;
+  margin-top: 12px;
+}
+
+.home-text a:focus,
+.home-text a:hover,
+.read-more a:focus,
+.read-more a:hover {
+  background: #0e3464;
+}
+
+.home-text a span {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.home-text a .cp-font-icon,
+.read-more a .cp-font-icon {
+  font-size: 2.2rem;
+  margin-left: 21px;
+}
+
+
+/* Attendance
+=============*/
+
+.attendance {
+  text-align: center;
+  overflow: hidden;
+}
+
+.cp-attendance {
+  width: 301px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.cp-attendance ul li {
+  font-size: 0;
+  height: 45px;
+  margin-bottom: 9px;
+  background: #f7dc8f;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+
+.cp-attendance ul li:last-child {
+  margin-bottom: 0;
+}
+
+.cp-attendance ul li span {
+  display: inline-block;
+  vertical-align: middle;
+  height: 45px;
+  font-size: 1.8rem;
+  line-height: 45px;
+}
+
+.cp-attendance ul li span:nth-of-type(1) {
+  font-weight: 700;
+  font-family: 'Roboto Slab', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, sans-serif;
+  color: #2f517b;
+  box-sizing: border-box;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.cp-attendance ul li span:nth-of-type(2) {
+  height: 45px;
+  text-align: right;
+  overflow: hidden;
+  box-sizing: border-box;
+  color: #003973;
+  font-family: 'Roboto Slab', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, sans-serif;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+/* Overall Attendance
+==================== */
+
+.overall-attendance {
+  display: inline-block;
+  vertical-align: middle;
+  width: 191px;
+  margin: 0 19px;
+}
+
+.attendance-circle span:nth-child(2) {
+  font-family: 'Roboto Slab', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, sans-serif;
+  color: #2f517b;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.attendance-circle span:nth-child(3) {
+  font-family: 'Roboto Slab', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, sans-serif;
+  display: block;
+  font-size: 3.2rem;
+  line-height: 1;
+  color: #000;
+  font-weight: 700;
+  height: 32px;
+  width: 105px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.attendance-circle .circle-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.attendance-circle {
+  position: relative;
+  box-sizing: border-box;
+  border: 19px solid #2f517b;
+  border-radius: 100%;
+}
+
+.overall-attendance h2 {
+  font-family: 'Roboto Slab', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, sans-serif;
+  font-size: 3.2rem;
+  color: #010101;
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+
+
+/* Noticeboard / Calendar Dates
+=============================== */
+
+.updates-area h2 {
+  padding-bottom: 5px;
+}
+
+.updates-area h2 a {
+  display: block;
+  text-align: center;
+}
+
+.updates-area ul {
+  list-style: none;
+  list-style-position: outside;
+}
+
+.updates-area li {
+  position: relative;
+  text-align: center;
+}
+
+.updates-area a {
+  display: block;
+  line-height: 1.7;
+}
+
+.updates-area li a {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ps_activity_compact-author {
+  display: none;
+}
+
+.ps_activity_compact-date,
+.ps_date {
+  display: block;
+  padding-bottom: 8px;
+  line-height: 1.3;
+}
+
+.ps_event {
+  position: relative;
+  min-height: 1px;
+  padding: 0;
+  border-radius: 0;
+  margin: 0;
+  background: none;
+}
+
+/* House Points
+=============== */
+
+.house-points-list {
+  list-style: none;
+}
+
+.housename {
+  display: block;
+}
+
+
+/* House Points
+===============*/
+
+.house-points {
+  font-family: 'Roboto Slab', 'Hoefler Text', Constantia, Palatino, 'Palatino Linotype', 'Book Antiqua', Georgia, serif;
+  font-size: 1.5rem;
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.house-points .housenumber {
+  font-size: 3.2rem;
+  display: block;
+  width: 81px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 35px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.house-points li {
+  width: 170px;
+  height: 170px;
+  display: inline-block;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 18px solid #fff;
+}
+
+.house-points li:nth-child(1) {
+  border-color: #b70003;
+}
+
+.house-points li:nth-child(2) {
+  border-color: #ffd300;
+}
+
+.house-points li:nth-child(3) {
+  border-color: #3d50b4;
+}
+
+.house-points li:nth-child(4) {
+  border-color: #4aae4f;
+}
+
+/*
+     FILE ARCHIVED ON 00:48:23 Sep 15, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 15:21:44 Aug 26, 2025.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.535
+  exclusion.robots: 0.019
+  exclusion.robots.policy: 0.009
+  esindex: 0.011
+  cdx.remote: 65.064
+  LoadShardBlock: 199.238 (3)
+  PetaboxLoader3.datanode: 352.559 (5)
+  load_resource: 422.075
+  PetaboxLoader3.resolve: 151.847
+  loaddict: 182.595
+*/
